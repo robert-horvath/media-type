@@ -1,0 +1,20 @@
+language: php
+
+php:
+  - '7.2'
+
+env:
+  - RHOTEST=unit
+
+before_install:
+  - travis_retry composer install --no-dev --no-interaction --prefer-source
+  - if [[ "$RHOTEST" == "unit" ]]; then travis_retry make dev-env; fi
+  - if [[ "$RHOTEST" == "integration" ]]; then travis_retry make no-dev-env; fi
+  - travis_retry composer dump-autoload # Dumps autoload-dev too 
+  - cat vendor/composer/autoload_psr4.php
+
+script:
+  - make "$RHOTEST"-test
+
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
