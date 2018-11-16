@@ -1,4 +1,23 @@
 {
 	"name" : "robert/media-type",
-	"license" : "MIT"
+	"license" : "MIT",
+	"require" : {
+		"php" : ">=7.1"
+	},
+	"require-dev" : {
+		"phpunit/phpunit" : "^7"
+	},
+	"autoload" : {
+		"psr-4" : {
+			"RHo\\MediaType\\" : "src/"
+		}
+	},
+	"autoload-dev" : {
+		"files" : [
+			"tests/mock_functions.php"
+		],
+		"psr-4" : {
+			"RHo\\MediaTypeTest\\" : "tests/"
+		}
+	}
 }
