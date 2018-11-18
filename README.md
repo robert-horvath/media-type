@@ -1,5 +1,5 @@
-[![Build Status](https://travis-ci.org/robert-horvath/media-type.svg?branch=develop)](https://travis-ci.org/robert-horvath/media-type)
-[![Code Coverage](https://codecov.io/gh/robert-horvath/media-type/branch/develop/graph/badge.svg)](https://codecov.io/gh/robert-horvath/media-type)
+[![Build Status](https://travis-ci.org/robert-horvath/media-type.svg?branch=0.1)](https://travis-ci.org/robert-horvath/media-type)
+[![Code Coverage](https://codecov.io/gh/robert-horvath/media-type/branch/0.1/graph/badge.svg)](https://codecov.io/gh/robert-horvath/media-type)
 [![Latest Stable Version](https://img.shields.io/packagist/v/robert/media-type.svg)](https://packagist.org/packages/robert/media-type)
 # Media Type Interface
 The MediaType module is a thin wrapper to access the Media Type Specifications and Registration Procedures.
